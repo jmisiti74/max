@@ -1,29 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jmisiti <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/06/23 14:45:01 by jmisiti           #+#    #+#             */
-/*   Updated: 2017/06/23 14:49:22 by jmisiti          ###   ########.fr       */
+/*   Created: 2017/06/24 15:03:27 by jmisiti           #+#    #+#             */
+/*   Updated: 2017/06/24 15:09:41 by jmisiti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+int		ft_putchar(char c);
 
-void	ft_putchar(char c)
+void	ft_print_alphabet(void)
 {
-	write(1, &c, 1);
-}
+	char c;
 
-int		main(void)
-{
-	ft_putchar('S');
-	ft_putchar('a');
-	ft_putchar('l');
-	ft_putchar('u');
-	ft_putchar('t');
-	ft_putchar('\n');
-	return (0);
+	c = 97;
+	while (c < 123)
+	{
+		ft_putchar(c);
+		c++;
+	}
 }
